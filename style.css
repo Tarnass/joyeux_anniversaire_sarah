@@ -844,4 +844,90 @@ h1 {
 
     
 
+
+}
+/* =========================
+   RESPONSIVE MOBILE FIX
+   ========================= */
+@media (max-width: 768px) {
+
+  body, #wrapper {
+    height: auto;
+    overflow-x: hidden;
+  }
+
+  .content{
+    flex-direction: column;
+    padding-top: 24px;
+    gap: 20px;
+  }
+
+  .content .left,
+  .content .right{
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  .content .left{
+    padding-left: 16px !important;
+  }
+
+  .title{
+    font-size: 2.1rem;
+    text-align: center;
+  }
+
+  .title .hat{
+    right: 10px;
+    top: -140px;
+    transform: scale(0.8);
+  }
+
+  .flag__birthday img{
+    width: 160px;
+  }
+
+  .content .right .image{
+    width: 260px;
+    height: 260px;
+    margin: 0 auto;
+  }
+
+  .name{
+    position: static;
+    margin: 12px auto 0;
+    padding: 8px 18px;
+  }
+
+  .name span{
+    font-size: 1.3rem;
+  }
+
+  .date__of__birth{
+    width: 280px;
+    height: 48px;
+    margin: 0 auto;
+  }
+
+  .date__of__birth span{
+    font-size: 1rem;
+  }
+
+  /* Décorations trop lourdes sur mobile */
+  .decorate_bottom,
+  .decorate_flower--one,
+  .decorate_flower--two,
+  .decorate_flower--three,
+  .smiley__icon,
+  .decorate_star,
+  .right .balloon_one,
+  .right .balloon_two{
+    display: none !important;
+  }
+
+  /* Lettre */
+  .box__letter .letter__border{
+    width: 92vw;
+    height: 75vh;
+  }
 }
